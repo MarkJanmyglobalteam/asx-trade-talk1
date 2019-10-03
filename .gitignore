@@ -1,0 +1,8 @@
+node_modules/
+public/components/
+public/app/fe-app/config.js
+public/app/be-app/config.js
+public/hot
+storage/*.key
+vendor/
+.env

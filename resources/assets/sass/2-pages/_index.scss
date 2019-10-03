@@ -1,0 +1,176 @@
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+   
+}
+.fourth-tile {
+	width: 50%;
+	background-image: url("https://cdn.goodlayers.com/financity/demo3/wp-content/uploads/2017/09/shutterstock_15900814.jpg"); 
+	opacity: 0.75; 
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.fifth-tile{
+	background-color: #2d5fde; 
+	height: 100%;
+		background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 25%;
+}
+
+.sixth-tile {
+	background-image: url("https://cdn.goodlayers.com/financity/demo3/wp-content/uploads/2017/09/shutterstock_361397258.jpg"); 
+	width: 25%;
+	height: 100%;
+		background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+html,body {
+	height: 100%;
+}
+
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), no-repeat center url("/img/cover-03.png");
+	height: 100%;
+	width: 100%; 
+	max-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header-content {
+	margin-top: 0px;
+}
+
+.header-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+
+}
+
+.header-desc{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 2%;
+	color:#f0f0f0;
+}
+
+.google-play {
+	height: 60px;
+	width: 200px;
+	background-image: url('/img/button/button-android.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	border:none;
+}
+
+.app-store {
+	height: 60px;
+	width: 200px;
+	background-image: url('/img/app-store.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	float: left;
+	border:none;
+	border-radius: 50px;
+}
+
+.service-2-head{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	font-weight: 600;
+	// margin-top: 9%;
+}
+
+.service-2-head-desc{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #9f9fa0;
+	font-weight: 300;
+	margin-bottom: 1%;
+}
+
+.service-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #4549fe;
+	font-weight: 600;
+}
+
+.service-2-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.service-desc{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #9f9fa0;
+}
+
+.service-row{
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.talk-to-us{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 5%;
+	color: white;
+}
+
+.talk-to-us-desc{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.something-about-us{
+	margin-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.something-about-us-desc{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+	.fourth-tile {
+
+		width:100%;
+	}
+
+	.fifth-tile{
+
+		width: 100%;
+	}
+
+	.sixth-tile {
+
+		width: 100%;
+	}
+}
+
+
+

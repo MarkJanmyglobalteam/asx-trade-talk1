@@ -1,0 +1,68 @@
+#stocks{
+
+    .item {
+	   word-break: break-all;
+	   position : relative;
+	}
+
+    .item.ng-move,
+	.item.ng-enter,
+	.item.ng-leave {
+	  -webkit-transition:all linear 0.5s;
+	  transition:all linear 0.5s;
+	}
+
+	.item.ng-leave.ng-leave-active,
+	.item.ng-move,
+	.item.ng-enter {
+	  opacity:0;
+	}
+
+	.item.ng-leave,
+	.item.ng-move.ng-move-active,
+	.item.ng-enter.ng-enter-active {
+	  opacity:1;
+	}
+
+	.list-group{
+		.list-group-item{
+			.box{
+			    position: absolute;
+			    font-size: 30px;
+			    height: 100%;
+
+			    &.left{
+				    top: 0;
+				    left: 0;
+				    width: 20px;
+			    }
+
+			    &.right{
+				    top: 0;
+				    right: 0;
+				    width: 10px;
+			    }
+
+			    &.primary{
+			  		background: #0876a1;
+			    }
+
+			    &.green{
+			    	background: #8ecf61;
+			    }
+
+			    &.red{
+			    	background: #a94442;
+			    }
+			}
+
+			.list-group-item-heading{
+				font-size : 45px !important;
+				margin-bottom : 0px !important;
+				line-height : 1em;
+				color : #31708f;
+				text-decoration : none
+			}
+		}
+	}
+}

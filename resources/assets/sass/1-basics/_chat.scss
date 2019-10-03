@@ -1,0 +1,510 @@
+#chatBoxWrapper{
+	position: fixed;
+	bottom: 15px;
+	z-index: 999;
+	right: 30px;
+	width: 280px;
+	
+	.chatBox{
+		background: #fff;
+		height: 350px;
+		border-radius: 3px;
+		box-shadow: 0px 10px  5px rgba(0,0,0,0.6);
+		-moz-box-shadow: 0px 5px  5px  rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0px 5px 5px  rgba(0,0,0,0.6);
+		-o-box-shadow: 0px 5px 5px  rgba(0,0,0,0.6);
+		margin-bottom: 10px;
+
+		.chatBoxHeader{
+			height: 50px;
+		    background: #337ab7;
+		    border-top-left-radius: 3px;
+		    border-top-right-radius: 3px;
+
+		    .box{
+			  margin: 0 auto;
+			  position: absolute;
+			  width: 100%;
+			  height: 50px;
+
+			  &.isForwarding{
+			     width : 93% !important;
+			     margin-left : 20px;
+			  }
+
+			  .container-1{
+				  width: 100%;
+				  vertical-align: middle;
+				  white-space: nowrap;
+				  position: relative;
+
+
+				  .icon{
+					  position: absolute;
+					  top: 50%;
+					  margin-left:-30px;
+					  margin-top: 15px;
+					  z-index: 1;
+					  color: #dddddd;
+				  }
+
+				  input{
+				  	  &:focus, &:active{
+						outline : 0 !important;
+				  	  }
+				  	  &#search{
+						  width: 100%;
+						  height: 45px;
+						  background: transparent;
+						  border: none;
+						  font-size: 10pt;
+						  float: left;
+						  color: #ffffff;
+						  padding-right: 45px;
+    					  padding-left: 15px;
+						  -webkit-border-radius: 5px;
+						  -moz-border-radius: 5px;
+						  border-radius: 5px;
+						  margin-top: 4px;
+						 
+					 }
+
+					 &::-webkit-input-placeholder{  color: #dddddd; }
+				   }
+				}
+			}
+		}
+
+		.chat-profile{
+			cursor: pointer;
+		    width: 40px;
+		    height: 40px;
+		    border: 2px solid #337ab7;
+		    margin-top: 4px;
+		} 
+
+		.addedHeight{
+           height: 266px !important;
+		}
+
+		.titleLable{
+			 	padding-left: 10px;
+			    padding-top: 5px;
+			    background: #a9a7a7;
+			    color: #FFFFFE;
+			    padding-bottom: 2px;
+			    margin-top: 1px;
+			    text-align: center;
+		}
+
+		.clipBoardWrapper{
+			position: relative;
+		    border: 1px solid #ddd;
+		    padding: 15px 0px 5px 0px;
+		    top: -17px;
+		    background: #f5f5f5;
+		    z-index: 15;
+
+		    .form-group{
+		    	height: 30px;
+		    	background: #f5f5f5;
+		    }
+
+		    .clipBoardContainer{
+		    	width: 54%;
+		    	margin: auto;
+
+		    	.fa{
+		    		color :#535353;
+		    	}
+		    }
+
+		    .closeContainer{
+		    	top: 1px;
+		    	right: 1px;
+		    	position: absolute;
+		    	color: #ccc
+		    }
+		}
+
+		.chatMessagesList{
+			height: 250px;
+			 .ulMsg{
+			 	  height: 255px;
+			 	  &.withChat{
+			 	  	height: 266px;
+			 	  }
+
+			 	  &.withForwarding{
+			 	     height : 205px !important;
+			 	  }
+			 	
+			 	padding: 0;
+				list-style-type: none;
+			 	
+			 	li{
+			 		list-style: none;
+			 		padding: 10px 13px;
+			 		&:hover{
+						background : #dddddd38;
+			 		}
+
+			 		a{
+						text-decoration: none;
+						.row{
+
+							[class^="col-"], [class*=" col-"] {
+							 	padding: 10px 0px;
+							 	margin: 0px;
+							 	p{
+							 		&.text-muted{
+							 		    
+							 		    .popover{
+							 		        left: 94px !important;
+							 		        
+							 		        &.left-top{
+							 		    	 	top: 12px !important;
+    									    } 
+    									    
+    									    &.left-bottom{
+							 		    	 	top: -36px !important;
+    									    } 	
+
+    									    .popover-inner{
+    									        .popover-content{
+    									        	padding : 0px !important;
+    									        }
+    									    }
+							 		    }
+
+							 		    .ulMenu{
+							 		       padding: 0;
+							 		       list-style-type: none;
+							 		       
+							 		       li{
+							 		       	padding : 4px 13px !important;
+							 		       }
+							 		    }
+
+							 			.pull-left{
+											margin-left: 15px;
+							 			}
+							 			.pull-right{
+											
+											&.time-elapsed{
+											   width: 7em;
+											   white-space: nowrap;
+											   overflow: hidden;
+											   text-overflow: ellipsis;
+											}
+
+											&.icon{
+												position: absolute;
+											    right: 0;
+											    top: 17px;
+											}
+											
+							 			}
+							 		}
+
+							 		&.msg-body{
+							 			white-space: nowrap;
+									    width: 15em;
+									    overflow: hidden;
+									    text-overflow: ellipsis;
+									    margin-left: 14px;
+									    color: #000;
+									    margin-top: 0px;
+							 		}
+
+							 		&.email-content{
+							 			clear: both;
+									    white-space: nowrap;
+									    width: 11em;
+									    overflow: hidden;
+									    text-overflow: ellipsis;
+									    margin-left: 10px;
+
+									    &.withForwarding{
+									        width: 8em !important;
+									    }
+							 		}
+							 	}
+							}
+						}
+						
+			 		}
+			 	}
+			 }
+
+			 .divOverLay{
+			 	width: 100%;
+                height: 71.5%;
+                position: absolute;
+                top: 50px;
+                left: 0; z-index: 10;
+			 }
+
+		}
+
+		.newConvoButton{
+				position: fixed;
+				bottom: 110px;
+				margin-left: 55px;
+				background: #a8a7a7;
+				color: #fff;
+
+				&:focus, &:active{
+                  outline : none !important;
+                }
+
+                &:hover{
+					background: #8d8c8c;
+                }
+		}
+
+		.nav-tabs{
+			li{
+				width : 33.33%;
+				text-align: center;
+				
+				&.active{
+					a{
+						border : none;
+						width: 100%;
+  						border-bottom: 2.5px solid #337ab7;
+  						&:hover{
+  							border-bottom: 2.5px solid #337ab7;
+  						}
+					}
+				}
+
+				a{
+					color: #23527c;
+					&:hover{
+						border : none;
+						background : transparent;
+						font-weight : bold;
+					}
+				}
+			}
+		}
+
+		.form-control{
+			background:#dedede2b;
+			border-bottom-left-radius: 5px !important;
+			font-size: 12px;
+			border-right: none;
+			box-shadow: none;
+			&:focus{
+				border-color : #dddddd !important;
+				box-shadow: none;
+			}
+		}
+
+		.addOn{
+			background:#dedede2b;
+			border-bottom-left-radius: 5px !important;
+			border-left: none;
+		}
+
+		.h-w-30{
+			width: 30px !important;
+			height: 30px !important;
+		}
+
+		.msgItem{
+			border: 1px solid #dddd;
+			border-radius: 10px;
+			padding: 5px 15px !important;
+			.breakWord{
+				width: 13em;
+			    overflow-wrap: break-word;
+			}
+
+			&.leftBubble{
+
+				position: relative;
+		        margin-left: 10px !important;
+		        font-family: inherit;
+
+		        &:before
+		        {
+		                content: '';
+		                position: absolute;
+		                left: -20px;
+    					top: 18px;
+		                width: 0;
+		                height: 0;
+		                border: 10px solid transparent;
+		                border-right: 10px solid #333;
+		            
+		        }
+
+		        &:after
+		        { 
+		                content: '';
+		                position: absolute;
+		                left: -20px;
+    					top: 18px;
+		                width: 0;
+		                height: 0;
+		                border: 10px solid transparent;
+		                border-right: 10px solid white;
+		        }
+
+	        }
+
+	        &.rightBubble{
+
+				position: relative;
+		        margin-right: 4px !important;
+		        font-family: inherit;
+
+		        &:before
+		        {
+		                content: '';
+		                position: absolute;
+		                right: -20px;
+    					top: 18px;
+		                width: 0;
+		                height: 0;
+		                border: 10px solid transparent;
+		                border-left: 10px solid #333;
+		            
+		        }
+
+		        &:after
+		        { 
+		                content: '';
+		                position: absolute;
+		                right: -20px;
+    					top: 18px;
+		                width: 0;
+		                height: 0;
+		                border: 10px solid transparent;
+		                border-left: 10px solid white;
+		        }
+
+	        }
+		}
+
+		.loadingMsg{
+			position: absolute;
+			margin-top: 100px;
+		    margin-left: 114px;
+		}
+
+	}
+
+	.chatButtonWrapper{
+		width: 100%;
+		text-align: right;
+			
+		.chatButton{
+			padding : 15px 15px;
+			border-radius : 50%;
+			&.addedPadding{
+				padding : 15px 18px;
+			}
+
+			&:focus, &:active{
+                 outline : none !important;
+                 border-color : transparent !important;
+            }
+		}
+	}
+
+	.btn-group{
+	    position : absolute !important;
+	    & > .btn{
+            &:not(:first-child):not(:last-child):not(.dropdown-toggle){
+              border-top-left-radius: 4px !important;
+	          border-bottom-left-radius: 4px !important;
+            }
+	    }
+	}
+
+	.animate.ng-enter, 
+	.animate.ng-leave
+	{ 
+	    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	    position: relative;
+
+	} 
+	 
+	.animate.ng-enter {
+	    left: 100%;
+	    opacity: 0;
+	}
+	.animate.ng-enter.animate.ng-enter-active {
+	    left: 0;
+	    opacity: 1;
+	}
+	 
+	.animate.ng-leave {
+	    left: 0;
+	    opacity: 1;
+	}
+	.animate.ng-leave.animate.ng-leave-active{
+	    left: 100%;
+	    opacity: 0;
+	}
+
+	/* ngIf animation */
+	.animationIf.ng-enter,
+	.animationIf.ng-leave {
+	  -webkit-transition: opacity ease-in-out 500ms;
+	  -moz-transition: opacity ease-in-out 500ms;
+	  -ms-transition: opacity ease-in-out 500ms;
+	  -o-transition: opacity ease-in-out 500ms;
+	  transition: opacity ease-in-out 500ms;
+	}
+	.animationIf.ng-enter,
+	.animationIf.ng-leave.ng-leave-active {
+	  opacity: 0;
+	  height: 0;
+	}
+	.animationIf.ng-leave,
+	.animationIf.ng-enter.ng-enter-active {
+	  opacity: 1;
+	}
+	 
+	.scale.ng-enter,
+	.scale.ng-leave { 
+		 -webkit-transition: 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+	    -moz-transition: 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+	    -ms-transition: 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+	    -o-transition: 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+	    transition: 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000) all;
+	    position: relative;
+	    display: block;
+	} 
+
+	.scale.ng-enter,
+	.scale.ng-leave.ng-leave-active {
+	    -webkit-transform: scaleY(0) scaleX(0);
+	    -moz-transform: scaleY(0) scaleX(0);
+	    -ms-transform: scaleY(0) scaleX(0);
+	    -o-transform: scaleY(0) scaleX(0);
+	    transform: scaleY(0) scaleX(0);
+		opacity: 0;
+		height: 0px
+	}
+
+	.scale.ng-leave,
+	.scale.ng-enter.ng-enter-active {
+	    -webkit-transform: scaleY(1) scaleX(1);
+	    -moz-transform: scaleY(1) scaleX(1);
+	    -ms-transform: scaleY(1) scaleX(1);
+	    -o-transform: scaleY(1) scaleX(1);
+	    transform: scaleY(1) scaleX(1);
+		opacity: 1;
+	}
+
+
+}

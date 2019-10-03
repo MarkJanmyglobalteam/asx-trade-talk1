@@ -1,0 +1,48 @@
+#asx-sharemarket-game{
+	
+	.bg-inverse{
+	   h4{
+	    	padding: 0px !important;
+	    	margin-top: 11px !important;
+	    }
+    }
+
+    .switch-container{
+	    margin-top: 12px !important;
+        
+        .text{
+        	font-size: 12px;
+        	position: relative;
+    		top: -3px;
+        }
+
+        .bolder{
+        	font-weight : bold;
+        }
+
+		label.switch{
+			width: 48px !important;
+	    	height: 14px !important;
+
+	    	input{
+			  	&:checked{
+			  		.text{
+			  			 color : red !important;
+			  		}
+			  	}
+		  	}
+	   
+			.slider{
+			    background-color: #9B9B9B !important;
+
+				&:before{
+					    background-color: #f0ad4e !important;
+					    height: 25px !important;
+	    				width: 25px !important;
+	    				bottom : -5px !important;
+	    				left : -2px !important;
+				}
+			}
+		}
+	}
+}

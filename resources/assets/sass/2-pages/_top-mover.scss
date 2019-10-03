@@ -1,0 +1,26 @@
+#topMovers{
+	margin-top: 20px !important;
+
+	.tab-header{
+			background: #e8e6e6;
+			label{
+				font-weight: 700;
+			}
+		}
+	
+	.bg-inverse{
+	 	background: #282828 !important;
+	     h4{
+	         color: #c2c2c2;
+	     }
+	 }
+	 .stock{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	.remove_padding{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+ 

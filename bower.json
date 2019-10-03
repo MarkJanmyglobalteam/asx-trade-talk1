@@ -1,0 +1,60 @@
+{
+  "name": "ASX Trade Talk WebPage",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mark Jan Enriquez <enriquez.mark.jan@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "angular": "^1.6.6",
+    "angular-ui-router": "^1.0.10",
+    "oclazyload": "^1.1.0",
+    "bootstrap": "3.3.7",
+    "components-font-awesome": "^4.7.0",
+    "angular-slick-carousel": "^3.1.7",
+    "angular-moment": "^1.1.0",
+    "angular-chart.js": "^1.1.1",
+    "ZingChart-AngularJS": "zingchart-angularjs#^1.2.0",
+    "angular-ui-select": "^0.19.8",
+    "angular-sanitize": "^1.6.6",
+    "angular-bootstrap": "^2.5.0",
+    "satellizer": "^0.15.5",
+    "angular-messages": "^1.6.6",
+    "a0-angular-storage": "^0.0.15",
+    "ng-password-strength": "^0.2.1",
+    "angular-jwt": "^0.1.9",
+    "bootstrap-social": "^5.1.1",
+    "angularfire": "^2.3.0",
+    "angular-socialshare": "angularjs-socialshare#^2.3.11",
+    "angular-toastr": "^2.1.1",
+    "angular-animate": "^1.6.7",
+    "ng-file-upload": "^12.2.13",
+    "angular-smooth-scrollbar": "^7.2.0",
+    "ng-scrollbars": "^0.0.11",
+    "css-ripple-effect": "^1.0.8",
+    "angular-confirm": "angular1-confirm#^1.1.0",
+    "ngclipboard": "^1.1.3",
+    "angular-web-notification": "^1.2.26",
+    "mentions-kinder.js": "0.3.3",
+    "jquery-mentions": "^1.0.4",
+    "angular-resource": "^1.6.8",
+    "At.js": "jquery.atwho#^1.5.4",
+    "rx-angular": "angular-rx#^1.1.3"
+  },
+  "resolutions": {
+    "angular": "^1.6.6",
+    "bootstrap": "3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
